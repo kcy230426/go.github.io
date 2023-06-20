@@ -27,11 +27,22 @@ body{
     }
 }
 
+// 높이가 990이하일 때 현재화면의 100%로 보이게 한다.
+
 @media(min-width:991px){
    .swiper-slide br{
         display: none;
     }
 }
+// 넓이가 991 초과일때 br은 보이지 않는다.
+
+@media(max-width:991px){
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+}
+
+// 넓이가 991 이하일 때 앞뒤 버튼을 제거한다.
 
 //br의 경우 반응형(모바일) 너비가 기준이 되기 때문에
 //min-width나 min-height를 같이 써야함
@@ -54,4 +65,14 @@ body{
 #swiper-boxs i{
     margin-right: 6px;
     font-size: 50pt;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white !important;
+}
+
+
+
+.swiper-pagination-bullet-active{
+    background: white !important;
 }
