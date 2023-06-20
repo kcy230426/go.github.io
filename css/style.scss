@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Nanum pen Script', serif;
+}
+
+#section .box1{
+    background-color: rgb(241, 41, 41);
+}
+
+#section .box2{
+    background-color: rgb(60, 101, 236);
+}
+
+#section .box3{
+    background-color: rgb(255, 215, 84);
+}
+
+@media(max-height:990px){
+    .h-md-100{
+        max-height: 100vh;
+    }
+}
+
+@media(min-width:991px){
+   .swiper-slide br{
+        display: none;
+    }
+}
+
+//br의 경우 반응형(모바일) 너비가 기준이 되기 때문에
+//min-width나 min-height를 같이 써야함
+
+// @media(max-width:990px){
+//     .w-md-100{
+//         max-height: 100vh !important;
+//     }
+// }
+
+#section .swiper{
+    height: 800px;
+}
+
+#swiper-boxs div{
+    color: white;
+    font-size: 35pt;
+}
+
+#swiper-boxs i{
+    margin-right: 6px;
+    font-size: 50pt;
+}
